@@ -3,7 +3,7 @@ const substitutionModule = (function () {
   const result = []
 
   function substitution(input, alphabet, encode = true) {
-    const check = new Set(alphabet);
+    const check = new Set(alphabet)
     if (alphabet === undefined || alphabet.length < 26 || [...check].length < 26) return false
       alphabet.split("")
     if (encode)
